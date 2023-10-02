@@ -3,8 +3,14 @@ import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient'; 
 
 export default function App({ navigation }) {
-  const handleLoginPress = () => {
-    navigation.navigate('Login'); // Chuyển đến trang đăng nhập khi nút được nhấn
+  // const handleLoginPress = () => {
+  //   navigation.navigate('Login'); // Chuyển đến trang đăng nhập khi nút được nhấn
+  // };
+  // const handleRegisterPress = () => {
+  //   navigation.navigate('Register');
+  // };
+  const handleNavigation = (pageName) => {
+    navigation.navigate(pageName);
   };
   return (
     <LinearGradient
@@ -26,10 +32,10 @@ export default function App({ navigation }) {
       <View style={styles.style4}>
         {/* <Button title='LOGIN' color={'#e3c000'}></Button>
         <Button title='SIGNUP' color={'#e3c000'}></Button> */}
-        <TouchableOpacity style={styles.button} onPress={handleLoginPress}>
+        <TouchableOpacity style={styles.button} onPress={() => handleNavigation('Login')}>
           <Text style={styles.buttonText}>LOGIN</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => handleNavigation('Register')}>
           <Text style={styles.buttonText}>SIGNUP</Text>
         </TouchableOpacity>
       </View>

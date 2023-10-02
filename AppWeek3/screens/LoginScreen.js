@@ -25,9 +25,22 @@ export default function Login() {
         </TouchableOpacity>
       </View>
       <View style={styles.style3}>
-        <Text>When </Text>
+        <Text style={[styles.style3.style3_text,{marginTop:-20}]}>When you agree to terms and conditions</Text>
+        <TouchableOpacity>
+          <Text style={[styles.style3.style3_text, {color: '#5D25FA'}]}>For got your password</Text>
+        </TouchableOpacity>
+        <Text style={styles.style3.style3_text}>Or login with</Text>
       </View>
       <View style={styles.style4}>
+        <TouchableOpacity style={[styles.style4.btn, {backgroundColor: '#25479B'}]}>
+          <Image style={[styles.style4.image, {marginLeft: -15}]} source={require('../assets/image/icofacebook.png')}/>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.style4.btn, {backgroundColor: '#0F8EE0'}]}>
+          <Image style={[styles.style4.image, {width:25, height:25}]} source={require('../assets/image/icozalo.png')}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.style4.btn, {backgroundColor: '#FFFFFF'}]}>
+          <Image style={[styles.style4.image]} source={require('../assets/image/icogoogle.png')}></Image>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -55,11 +68,31 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    style3_text:{
+      fontSize: 14,
+      fontWeight: 400,
+      marginTop:15,
+    }
   },
   style4: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'row',
+    marginTop: -20,
+    btn:{
+      borderColor: '#0680F1',
+      borderWidth: 1,
+      borderRadius: 2,
+      width: 110,
+      height: 45,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    image:{
+      width: 30,
+      height: 30,
+    }
   },
   input: {
     height: 54,
