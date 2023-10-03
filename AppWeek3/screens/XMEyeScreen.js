@@ -11,15 +11,18 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <View style={styles.style1}>
-        <Text style={styles.title}>LOGIN</Text>
+      <Image
+            style={{ width: 112.19, height: 107.2}}
+            source={require('../assets/image/XMEye.png')}
+          />
       </View>
       <View style={styles.style2}>
         <TextInput
-          style={styles.input}
-          placeholder="Email"
+          style={styles.style2.input}
+          placeholder="Please input user name"
         />
         <View style={{ flexDirection: 'row', alignItems: 'center'}}>
-          <TextInput style={styles.input} placeholder="Password">
+          <TextInput style={styles.style2.input} placeholder="Password">
           </TextInput>
           <Image
             style={{ width: 38, height: 25 , marginLeft: 285 , position: 'absolute'}}
@@ -57,18 +60,28 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#31AA5230',
+    backgroundColor: '#FFFFFF',
   },
   style1: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 0,
   },
   style2: {
     flex: 3,
     justifyContent: 'center',
     alignItems: 'center',
+    input: {
+        height: 54,
+        width: 330,
+        margin: 12,
+        borderBottomWidth : 1,
+        padding: 10,
+        fontSize: 18,
+        fontWeight: 400,
+        color: '#C4C4C4',
+        borderColor: '#C4C4C4',
+      },
   },
   style3: {
     flex: 1,
@@ -99,17 +112,6 @@ const styles = StyleSheet.create({
       width: 30,
       height: 30,
     }
-  },
-  input: {
-    height: 54,
-    width: 330,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-    fontSize: 18,
-    fontWeight: 400,
-    backgroundColor: '#C4C4C44D',
-    borderColor: '#F2F2F2',
   },
   title: {
     fontSize: 25,
