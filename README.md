@@ -1,7 +1,7 @@
 # ReactNative_Week3
 ReactNative_Week3
 
-npm install react-native-linear-gradient --save
+npm install expo-linear-gradient
 
 npm install @react-navigation/native @react-navigation/stack
 
