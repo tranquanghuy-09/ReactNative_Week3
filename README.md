@@ -4,11 +4,11 @@ Thực hành tuần 3 môn lập trình di động
 <h3>Tên: Trần Quang Huy</h3>
 <h3>MSSV: 20092731</h3>
 
-#Demo App
+# Demo App
 
 https://github.com/tranquanghuy-09/ReactNative_Week3/assets/107989088/b011494f-466d-4b8f-a2d8-936c8ecd084e
 
-#Install
+# Install
 
 npm install expo-linear-gradient
 
