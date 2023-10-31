@@ -1,8 +1,8 @@
 # Study_ReactNative_Week3
-Thực hành tuần 3 môn lập trình di động
+Practice week 3 of mobile programming subject!
 
-<h3>Tên: Trần Quang Huy</h3>
-<h3>MSSV: 20092731</h3>
+<h3>Name: Trần Quang Huy</h3>
+<h3>StudentID: 20092731</h3>
 
 # Demo App
 
