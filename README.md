@@ -8,6 +8,8 @@ Practice week 3 of mobile programming subject!
 
 https://github.com/tranquanghuy-09/ReactNative_Week3/assets/107989088/b011494f-466d-4b8f-a2d8-936c8ecd084e
 
+## Secondary link demo => [Click here to view](https://youtu.be/LonNCi-wLbI)
+
 # Install
 
 npm install expo-linear-gradient
